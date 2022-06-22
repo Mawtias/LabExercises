@@ -18,7 +18,7 @@ public class main {
 		System.out.println("Please type the second number");
 		
 		calc.setNum2(scan.nextDouble());
-		if(calc.getNum2() == 0) System.out.println("Cannot divide by zero");
+		if(calc.getNum2() == 0 && op == '/') System.out.println("Cannot divide by zero");
 		else switch (op) {
 			case '+': {
 				System.out.println(calc.getNum1() + " " + op + " " + calc.getNum2() + " = " + calc.add());
@@ -42,7 +42,7 @@ public class main {
 		
 		System.out.println("Do you want to  continue or quit?");
 		String word = scan.next();
-		if(word.equalsIgnoreCase("continue"))main(args);
-		else System.out.println("Bye!");
+		if(word.equalsIgnoreCase("Bye"))System.out.println("Bye!");
+		else main(args);
 	}
 }
