@@ -19,6 +19,7 @@ public class Question1 {
 		System.out.println("Enter an integer: ");
 		int search = scan.nextInt();
 		
+		
 		for (int n = 0; n < nums.size(); n++) {
 			if (nums.get(n) == search) {
 				System.out.println("Number is in the list");
